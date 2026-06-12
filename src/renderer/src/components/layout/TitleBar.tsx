@@ -1,11 +1,15 @@
 import { Minus, Square, X } from 'lucide-react'
+import logo from '../../assets/logo.png'
 
 export default function TitleBar() {
   return (
     <div className="drag h-8 flex items-center justify-between bg-surface-0 border-b border-surface-3 flex-shrink-0 z-50">
-      <span className="pl-4 text-[11px] font-semibold tracking-widest uppercase text-ink-muted select-none">
-        Tawazun
-      </span>
+      <div className="pl-3 flex items-center gap-2 select-none">
+        <img src={logo} alt="Tawazun" className="h-5 w-5 object-contain" />
+        <span className="text-[11px] font-semibold tracking-widest uppercase text-ink-muted">
+          Tawazun
+        </span>
+      </div>
       <div className="no-drag flex h-full">
         <button
           onClick={() => window.api.minimizeWindow()}

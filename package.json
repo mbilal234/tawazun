@@ -40,6 +40,7 @@
     "appId": "com.tawazun.app",
     "productName": "Tawazun",
     "copyright": "Tawazun",
+    "icon": "resources/icon.ico",
     "directories": {
       "output": "release"
     },
@@ -48,6 +49,7 @@
       "package.json"
     ],
     "win": {
+      "icon": "resources/icon.ico",
       "target": [{ "target": "nsis", "arch": ["x64"] }]
     },
     "mac": {
