@@ -1,6 +1,7 @@
-# Budget — Personal Finance Tracker
+# Tawazun — Finance Tracker
 
-A lightweight Windows desktop app for tracking income, expenses, and savings — built with Electron and React. All data stays on your machine; nothing is sent to any server.
+Track your finances easily. All data stays on your machine. Nothing is sent to any server.
+Safe and Simple.
 
 ---
 
@@ -10,17 +11,12 @@ A lightweight Windows desktop app for tracking income, expenses, and savings —
 - **Analytics** — Charts and summaries with CSV and PDF export
 - **Savings tracker** — View savings chronologically or grouped by category
 - **CSV import** — Bring in transactions from your old spreadsheets; undo any import in one click
-- **9 themes** — Book Paper, Studio Olive, Weathered Copper, Alpha Grass, Monastery, Apex Dark, Minecraft, Mario, iOS Glass
-- **High contrast mode** and 6 font size options
+- **9 themes** — Book Paper, Studio Olive, Weathered Copper, Alpha Grass, Monastery, Apex Dark, Minecraft, Mario, iOS Glass (My favorite is Weathered Copper. The rest were attempts but Im not too fond of them. Would appreciate theme contributions lol)
+- **High contrast mode** and 6 font size options (for the old folks)
 - **100% local** — Data lives in a plain CSV file on your PC; no accounts, no cloud
 
 ---
 
-## Screenshots
-
-> Add screenshots here after you push — drag images into this section on the GitHub editor.
-
----
 
 ## Download (Windows)
 
