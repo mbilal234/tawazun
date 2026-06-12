@@ -1,4 +1,4 @@
-# Budget — Personal Finance Tracker
+# Tawazun — Finance Tracker
 
 A lightweight Windows desktop app for tracking income, expenses, and savings — built with Electron and React. All data stays on your machine; nothing is sent to any server.
 
