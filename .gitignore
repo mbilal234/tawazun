@@ -1,0 +1,12 @@
+node_modules
+out
+dist
+release
+.DS_Store
+*.exe
+*.blockmap
+builder-debug.yml
+.claude/
+*.xlsb
+*.zip
+old_budget*
