@@ -1,6 +1,20 @@
 import { app, BrowserWindow, ipcMain, dialog } from 'electron'
 import { join } from 'path'
 import * as fs from 'fs'
+import * as os from 'os'
+
+// One-time migration: copy data from old "budget-app" folder into the new "tawazun" folder
+function migrateAppData(): void {
+  const oldDir = join(os.homedir(), 'AppData', 'Roaming', 'budget-app')
+  const newDir = app.getPath('userData')
+  if (oldDir === newDir || !fs.existsSync(oldDir)) return
+  if (!fs.existsSync(newDir)) fs.mkdirSync(newDir, { recursive: true })
+  for (const file of ['transactions.csv', 'savings-categories.json', 'last-import-batch.json']) {
+    const src = join(oldDir, file)
+    const dst = join(newDir, file)
+    if (fs.existsSync(src) && !fs.existsSync(dst)) fs.copyFileSync(src, dst)
+  }
+}
 import {
   readAllTransactions,
   appendTransaction,
@@ -41,6 +55,7 @@ function createWindow(): void {
 }
 
 app.whenReady().then(() => {
+  migrateAppData()
   createWindow()
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()

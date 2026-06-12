@@ -1,4 +1,4 @@
-# Contributing to Budget
+# Contributing to Tawazun
 
 Thanks for taking the time to contribute! Whether it's a bug fix, a small improvement, or a new feature — all PRs are welcome.
 
@@ -104,4 +104,4 @@ The most common areas people will want to touch:
 npm run package
 ```
 
-Output goes to `release/Budget Setup 1.0.0.exe`. Don't commit the `release/` folder — it's in `.gitignore`.
+Output goes to `release/Tawazun Setup 1.0.0.exe`. Don't commit the `release/` folder — it's in `.gitignore`.

@@ -99,10 +99,10 @@ npm run package
 This compiles everything and produces a ready-to-install `.exe` at:
 
 ```
-release/Budget Setup 1.0.0.exe
+release/Tawazun Setup 1.0.0.exe
 ```
 
-Run that file to install Budget on any Windows PC.
+Run that file to install Tawazun on any Windows PC.
 
 ---
 
@@ -128,7 +128,7 @@ src/
 All data is stored locally at:
 
 ```
-C:\Users\<you>\AppData\Roaming\budget-app\transactions.csv
+C:\Users\<you>\AppData\Roaming\tawazun\transactions.csv
 ```
 
 It's a plain CSV file you can open in Excel at any time. No encryption, no cloud sync — what's on your machine stays on your machine.

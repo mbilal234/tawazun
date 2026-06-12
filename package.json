@@ -1,7 +1,7 @@
 {
-  "name": "budget-app",
+  "name": "tawazun",
   "version": "1.0.0",
-  "description": "Personal budget tracker",
+  "description": "Tawazun — personal finance tracker",
   "main": "./out/main/index.js",
   "scripts": {
     "dev:win": "set ELECTRON_RUN_AS_NODE=&& electron-vite dev",
@@ -37,9 +37,9 @@
     "vite": "^5.3.3"
   },
   "build": {
-    "appId": "com.personal.budget",
-    "productName": "Budget",
-    "copyright": "Personal Budget App",
+    "appId": "com.tawazun.app",
+    "productName": "Tawazun",
+    "copyright": "Tawazun",
     "directories": {
       "output": "release"
     },
@@ -59,7 +59,7 @@
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "Budget"
+      "shortcutName": "Tawazun"
     }
   }
 }

@@ -177,7 +177,7 @@ export default function Sidebar({ activeScreen, onNavigate }: Props) {
       </nav>
 
       <div className="p-4 border-t border-surface-3">
-        <p className="text-[10px] text-ink-muted text-center">Personal Budget</p>
+        <p className="text-[10px] text-ink-muted text-center">Tawazun</p>
       </div>
     </aside>
   )

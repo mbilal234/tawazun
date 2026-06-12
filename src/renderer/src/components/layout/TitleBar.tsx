@@ -4,7 +4,7 @@ export default function TitleBar() {
   return (
     <div className="drag h-8 flex items-center justify-between bg-surface-0 border-b border-surface-3 flex-shrink-0 z-50">
       <span className="pl-4 text-[11px] font-semibold tracking-widest uppercase text-ink-muted select-none">
-        Budget
+        Tawazun
       </span>
       <div className="no-drag flex h-full">
         <button

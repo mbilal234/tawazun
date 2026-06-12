@@ -18,8 +18,8 @@ interface ImportPreview {
 }
 
 const FORMAT_LABELS: Record<string, string> = {
-  'app-export':   'Budget App Export',
-  'app-internal': 'Budget App Internal',
+  'app-export':   'Tawazun Export',
+  'app-internal': 'Tawazun Internal',
   'generic':      'Generic CSV',
   'unknown':      'Unknown format',
 }
@@ -329,7 +329,7 @@ export default function ImportScreen({ hook }: Props) {
                 </p>
                 <div className="space-y-2.5">
                   {[
-                    { label: 'Budget App export', desc: 'CSV exported from this app (auto-detected)' },
+                    { label: 'Tawazun export', desc: 'CSV exported from this app (auto-detected)' },
                     { label: 'Generic CSV with columns', desc: 'date, type, amount, description — type can be income / expense / savings' },
                     { label: 'Bank statement CSV', desc: 'Separate debit and credit columns are supported' },
                   ].map(({ label, desc }) => (
