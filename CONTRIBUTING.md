@@ -105,3 +105,4 @@ npm run package
 ```
 
 Output goes to `release/Tawazun Setup 1.0.0.exe`. Don't commit the `release/` folder — it's in `.gitignore`.
+On macOS, the installer is `release/Tawazun-1.0.0.dmg`.
