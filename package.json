@@ -8,6 +8,7 @@
     "dev": "electron-vite dev",
     "build:electron": "electron-vite build",
     "package": "npm run build:electron && electron-builder",
+    "package:mac": "npm run build:electron && electron-builder --mac dmg",
     "preview": "electron-vite preview"
   },
   "dependencies": {
@@ -40,7 +41,7 @@
     "appId": "com.tawazun.app",
     "productName": "Tawazun",
     "copyright": "Tawazun",
-    "icon": "resources/icon.ico",
+    "icon": "resources/icon.png",
     "directories": {
       "output": "release"
     },
@@ -53,6 +54,7 @@
       "target": [{ "target": "nsis", "arch": ["x64"] }]
     },
     "mac": {
+      "icon": "resources/icon.png",
       "target": [{ "target": "dmg", "arch": ["x64", "arm64"] }],
       "category": "public.app-category.finance"
     },

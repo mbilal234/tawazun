@@ -18,9 +18,12 @@ Safe and Simple.
 ---
 
 
-## Download (Windows)
+## Download (Windows + macOS)
 
-Grab the latest installer from the [Releases](../../releases) page, run it, and you're done. No terminal needed.
+Grab the latest installer from the [Releases](../../releases) page:
+
+- **Windows**: `Tawazun Setup <version>.exe`
+- **macOS**: `Tawazun-<version>.dmg`
 
 ---
 
@@ -35,7 +38,7 @@ Grab the latest installer from the [Releases](../../releases) page, run it, and 
 | Charts | Recharts 2 |
 | CSV parsing | PapaParse 5 |
 | Build tool | electron-vite 2 |
-| Installer | electron-builder 24 (NSIS) |
+| Installer | electron-builder 24 (NSIS + DMG) |
 
 ---
 
@@ -90,19 +93,20 @@ The app window will open automatically. Any code changes you save will hot-reloa
 
 ---
 
-### 4. Build a Windows installer
+### 4. Build installers
 
 ```powershell
 npm run package
 ```
 
-This compiles everything and produces a ready-to-install `.exe` at:
+This compiles everything and produces installers in the `release/` folder:
 
 ```
 release/Tawazun Setup 1.0.0.exe
+release/Tawazun-1.0.0.dmg
 ```
 
-Run that file to install Tawazun on any Windows PC.
+Run the file that matches your operating system.
 
 ---
 
